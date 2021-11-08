@@ -1,1 +1,36 @@
 
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.mycompany.boletin7_4;
+
+/**
+ *
+ * @author David
+ */
+public class Boletin7_4 {
+
+    
+    public static void main(String[] args) {
+        // TODO code application logic here
+        
+        Persona aux = new Persona ();
+        float peso ;
+        String nome ;
+        
+        peso = aux.pedirPeso();
+        nome = aux.pedirNome();
+        
+        Persona persona1 = new  Persona(  peso, nome);
+        
+        Persona persona2 = new Persona(aux.pedirPeso(), (String)aux.pedirNome());
+        
+        persona1.comparar(persona1, persona2);
+        
+        
+        
+    }
+    
+}
